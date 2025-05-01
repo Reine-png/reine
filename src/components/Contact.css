@@ -1,0 +1,36 @@
+.contact {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #FFD700; /* Doré */
+  }
+  
+  .contact-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    color: #333;
+    line-height: 2;
+  }
+  
+  .contact-info a {
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  

@@ -8,8 +8,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate', // Mise à jour automatique
       manifest: {
-        name: 'G1 CV App',
-        short_name: 'G1 CV',
+        name: 'Reine CV',
+        short_name: 'Reine CV',
         description: 'Mon CV interactif en PWA',
         theme_color: '#ffffff',
         icons: [

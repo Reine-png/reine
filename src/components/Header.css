@@ -1,0 +1,45 @@
+.header {
+  background-color: #FFD700; /* Doré */
+  padding: 15px 0; /* Hauteur équilibrée */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo1 {
+  font-size: 1.6rem; /* Taille de logo modérée */
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Légèrement réduit pour compacité */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem; /* Taille de texte raisonnable */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #333;
+  transform: scale(1.05); /* Hover plus subtil */
+}
