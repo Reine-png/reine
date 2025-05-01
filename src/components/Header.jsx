@@ -1,19 +1,20 @@
-// src/components/Header.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        <h1 className="logo1">Reine CV</h1>
+        <h1 className="logo">Reine CV</h1>
         <ul className="nav-links">
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#experience">Expériences</a></li>
-          <li><a href="#education">Formations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/">Accueil</Link></li>
+          <li><Link to="/about">À propos</Link></li>
+          <li><Link to="/skills">Compétences</Link></li>
+          <li><Link to="/experience">Expériences</Link></li>
+          <li><Link to="/education">Formations</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/Cvmedia">CV Vidéo & Audio</Link></li>
         </ul>
       </nav>
     </header>

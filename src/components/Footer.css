@@ -1,0 +1,13 @@
+.footer {
+    background-color: #ffffff; /* Fond blanc */
+    color: #FFD700; /* Texte doré */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    border-top: 1px solid #eaeaea;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+    

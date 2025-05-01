@@ -1,0 +1,34 @@
+.cv-media {
+    background-color: #ffffff; /* Blanc */
+    color: #333;
+    padding: 40px 20px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .cv-media h2 {
+    font-size: 2.5rem;
+    color: #FFD700; /* Or */
+    margin-bottom: 30px;
+  }
+  
+  .media-section {
+    margin-bottom: 50px;
+  }
+  
+  .media-section h3 {
+    font-size: 1.8rem;
+    color: #FFD700;
+    margin-bottom: 15px;
+  }
+  
+  .media-player {
+    max-width: 90%;
+    width: 600px;
+    height: auto;
+    border: 3px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
