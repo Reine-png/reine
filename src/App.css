@@ -1,11 +1,15 @@
 /* src/App.css */
+
+/* Style de base pour #root */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
+/* Style du logo */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -13,6 +17,7 @@
   transition: filter 300ms;
 }
 
+/* Effet de survol sur le logo */
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -21,6 +26,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Animation du logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,31 +36,34 @@
   }
 }
 
+/* Animation du logo avec une préférence de mouvement réduite */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/* Style de la carte */
 .card {
   padding: 2em;
 }
 
+/* Style des liens 'read-the-docs' */
 .read-the-docs {
   color: #888;
 }
 
-/* Appliquer un style flexbox à toute la page */
+/* Flexbox pour la mise en page */
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-bottom: 60px; /* Pour donner de l'espace en bas pour le footer */
+  padding-bottom: 60px; /* Espace en bas pour le footer */
 }
 
-/* S'assurer que le footer reste en bas de la page */
+/* Footer */
 footer {
-  margin-top: auto; /* Pushes footer to the bottom of the page */
+  margin-top: auto;
   background-color: #1a1a1a;
   color: #fff;
   padding: 20px;
@@ -64,13 +73,80 @@ footer {
   font-family: 'Arial', sans-serif;
 }
 
-/* Ajuster la section CvMedia */
+/* Section CvMedia */
 .cv-media {
-  flex: 1; /* Permet à cette section de prendre de l'espace restant */
-  padding-bottom: 60px; /* Ajout d'un espace au bas de la section pour éviter que le footer empiète */
+  flex: 1;
+  padding-bottom: 60px;
 }
 
-/* Optionnel : Ajuster le style du lecteur audio/vidéo */
 .media-section {
   margin-bottom: 20px;
+}
+
+/* --- Media Queries pour rendre le site responsive --- */
+
+/* Pour les écrans plus petits que 768px (tablettes, mobiles) */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem; /* Réduire le padding pour les petits écrans */
+  }
+
+  .logo {
+    height: 4em; /* Réduire la taille du logo sur mobile */
+    padding: 1em; /* Réduire le padding pour les petits écrans */
+  }
+
+  .App {
+    padding-bottom: 50px; /* Réduire l'espace en bas sur les petits écrans */
+  }
+
+  footer {
+    font-size: 0.85rem; /* Réduire la taille de la police du footer sur les petits écrans */
+  }
+
+  .cv-media {
+    padding-bottom: 50px; /* Réduire l'espace pour la section CvMedia */
+  }
+
+  /* Adaptation des éléments vidéo/audio pour les écrans plus petits */
+  .media-player {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    height: auto; /* S'assurer que la hauteur est ajustée automatiquement */
+  }
+
+  .media-section h3 {
+    font-size: 1.2rem; /* Réduire la taille du titre des sections */
+  }
+
+  /* Adapter les marges pour les sections */
+  .media-section {
+    margin-bottom: 10px;
+  }
+}
+
+/* Pour les écrans plus petits que 480px (smartphones) */
+@media (max-width: 480px) {
+  .logo {
+    height: 3em;
+    padding: 0.5em;
+  }
+
+  .cv-media {
+    padding-bottom: 40px; /* Ajuster l'espace pour les très petits écrans */
+  }
+
+  footer {
+    font-size: 0.8rem; /* Réduire encore la taille du footer pour les très petits écrans */
+  }
+
+  /* Ajuster le padding des sections */
+  .media-section {
+    padding: 0.5em;
+  }
+
+  /* Adapter encore les éléments vidéo/audio */
+  .media-player {
+    width: 100%;
+    height: auto;
+  }
 }
