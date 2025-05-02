@@ -1,4 +1,3 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
@@ -12,6 +11,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
 import Cvmedia from './components/Cvmedia';
+import Cv from './components/Cv';
 import Footer from './components/Footer';
 
 function App() {
@@ -28,10 +28,11 @@ function App() {
               <li><Link to="/experience">Expériences</Link></li>
               <li><Link to="/education">Formations</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/cv-media">Cvmedia</Link></li>
+              <li><Link to="/cv-media">CV Média</Link></li>
+              <li><Link to="/cv">CV</Link></li>
             </ul>
           </nav>
-          
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -40,6 +41,7 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/contact" element={<><Contact /><ContactForm /></>} />
             <Route path="/cv-media" element={<Cvmedia />} />
+            <Route path="/cv" element={<Cv />} />
           </Routes>
         </main>
         <Footer />

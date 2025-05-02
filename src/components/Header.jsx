@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React from 'react';
 import { Link } from 'react-router-dom'; // ✅ Pour navigation via React Router
 import './Header.css';
@@ -15,7 +14,8 @@ const Header = () => {
           <li><Link to="/experience">Expériences</Link></li>
           <li><Link to="/education">Formations</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/cv-media">Cvmedia</Link></li> {/* lien vers la vraie page */}
+          <li><Link to="/cv-media">Cvmedia</Link></li>
+          <li><Link to="/cv">CV</Link></li>
         </ul>
       </nav>
     </header>

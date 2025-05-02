@@ -11,7 +11,7 @@ const CvMedia = () => {
           Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
-
+        
       <div className="media-section">
         <h3>🎧 CV Audio</h3>
         <audio controls className="media-player">
