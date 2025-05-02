@@ -1,13 +1,20 @@
+/* src/components/Footer.css */
 .footer {
-    background-color: #ffffff; /* Fond blanc */
-    color: #FFD700; /* Texte doré */
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1rem;
-    border-top: 1px solid #eaeaea;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-    
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;  /* Fond blanc */
+  color: #000000;  /* Texte noir pour contraster avec le fond blanc */
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 2px solid #FFD700;  /* Bordure or */
+  font-family: 'Arial', sans-serif;
+  z-index: 10;
+}
+
+.footer:hover {
+  background-color: #f1f1f1;  /* Légère nuance de gris clair au survol */
+  transition: background-color 0.3s ease;
+}

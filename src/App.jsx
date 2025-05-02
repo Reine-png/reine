@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
 
-// Importation de tous les composants
+// Composants
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -12,43 +11,41 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
+import Cvmedia from './components/Cvmedia';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div className="App">
-      <Header />
-      <main>
-        <section id="home">
-          <Home />
-        </section>
-
-        <section id="about">
-          <About />
-        </section>
-
-        <section id="skills">
-          <Skills />
-        </section>
-
-        <section id="experience">
-          <Experience />
-        </section>
-
-        <section id="education">
-          <Education />
-        </section>
-
-        <section id="contact">
-          <Contact />
-          <ContactForm />
-        </section>
-      </main>
+    <div className="App">
+      <Router>
+        <Header />
+        <main>
+          <nav>
+            <ul className="nav-links">
+              <li><Link to="/">Accueil</Link></li>
+              <li><Link to="/about">À propos</Link></li>
+              <li><Link to="/skills">Compétences</Link></li>
+              <li><Link to="/experience">Expériences</Link></li>
+              <li><Link to="/education">Formations</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/cv-media">Cvmedia</Link></li>
+            </ul>
+          </nav>
+          
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/contact" element={<><Contact /><ContactForm /></>} />
+            <Route path="/cv-media" element={<Cvmedia />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;

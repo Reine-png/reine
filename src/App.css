@@ -1,3 +1,4 @@
+/* src/App.css */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,9 +12,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +42,35 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Appliquer un style flexbox à toute la page */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 60px; /* Pour donner de l'espace en bas pour le footer */
+}
+
+/* S'assurer que le footer reste en bas de la page */
+footer {
+  margin-top: auto; /* Pushes footer to the bottom of the page */
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 2px solid #007acc;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Ajuster la section CvMedia */
+.cv-media {
+  flex: 1; /* Permet à cette section de prendre de l'espace restant */
+  padding-bottom: 60px; /* Ajout d'un espace au bas de la section pour éviter que le footer empiète */
+}
+
+/* Optionnel : Ajuster le style du lecteur audio/vidéo */
+.media-section {
+  margin-bottom: 20px;
 }
