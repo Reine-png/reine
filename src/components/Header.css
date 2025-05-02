@@ -43,3 +43,98 @@
   color: #333;
   transform: scale(1.05); /* Hover plus subtil */
 }
+/* Header principal */
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo */
+.logo1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* Menu burger (pour les petits écrans) */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Afficher le menu burger */
+  .burger-menu {
+    display: flex;
+  }
+
+  /* Cacher les liens de navigation par défaut */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  /* Afficher les liens lorsque le menu est ouvert */
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Changer la taille du logo */
+  .logo1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsivité pour les très petits écrans */
+@media (max-width: 480px) {
+  .logo1 {
+    font-size: 1.2rem; /* Logo plus petit */
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem; /* Liens plus petits */
+  }
+}
